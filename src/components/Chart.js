@@ -10,6 +10,7 @@ export const Chart = () => {
 
     return (
         <div className="chart">
+            <h2>Expenses</h2>
             <div className="chartContainer">
                 <ResponsiveContainer>
                     <LineChart data={bills} margin={{right:10, bottom: -15,left: -20}} >

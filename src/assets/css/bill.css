@@ -1,8 +1,10 @@
 .bill{
-    border: 1px solid blue;
     display: grid;
+    align-items: center;
     grid-template-columns: 2fr 5fr 3fr 1fr;
-    margin: 2px 0;
+    border-radius: 3px;
+    border: 1px solid grey;
+    margin: 5px 0;
 }
 .amount{
     display: grid;
@@ -10,11 +12,27 @@
     color: white;
     background-color: var(--purp);
     border-radius: 10px;
+    height: 90%;
+    width: 90%;
     margin: 3px;
+}
+.cat-desc{
+    margin: 3px 5px;
+}
+.category{
+    font-size: 1rem;
+}
+.description{
+    font-size: 12px;
 }
 .btn-deletebill{
     border: none;
     outline: none;
     color: white;
     background-color: var(--red);
+    height: 2rem;
+    width: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
 }

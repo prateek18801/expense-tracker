@@ -13,7 +13,26 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("./assets/images/bg.png");
+  background: linear-gradient(rgba(90, 68, 68, 0.5),rgba(0,0,0,0.5)), url("./assets/images/bg.png");
   background-position: center;
   background-size: cover;
 }
+
+.inp{
+  padding: 3px;
+  font-size: 12px;
+  height: 2rem;
+}
+.bills{
+  margin: 0 10px;
+}
+.bills::-webkit-scrollbar{
+  width: 0px;
+}
+/* .bills::-webkit-scrollbar-track{
+  background-color: rgb(172, 172, 172);
+}
+.bills::-webkit-scrollbar-thumb{
+  border-radius: 50px;
+  background-color: rgb(100, 100, 100);
+} */
