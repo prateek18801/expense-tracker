@@ -1,0 +1,8 @@
+.filter{
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-rows: 2fr 8fr;
+    height: 60%;
+    width: 100%;
+    background-color: var(--bg);
+}

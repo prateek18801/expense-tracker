@@ -1,0 +1,20 @@
+.bill{
+    border: 1px solid blue;
+    display: grid;
+    grid-template-columns: 2fr 5fr 3fr 1fr;
+    margin: 2px 0;
+}
+.amount{
+    display: grid;
+    place-items: center;
+    color: white;
+    background-color: var(--purp);
+    border-radius: 10px;
+    margin: 3px;
+}
+.btn-deletebill{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: var(--red);
+}

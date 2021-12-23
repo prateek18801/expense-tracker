@@ -9,35 +9,35 @@ export const BillProvider = (props) => {
             description: "Dominoes",
             category: "FoodnDining",
             amount: 430,
-            date: "01-02-2020"
+            date: "2021-02-12"
         },
         {
             id: "2",
             description: "CarWash",
             category: "Utility",
-            amount: 430,
-            date: "01-02-2020"
+            amount: 300,
+            date: "2021-03-15"
         },
         {
             id: "3",
             description: "Amazon",
             category: "Shopping",
-            amount: 430,
-            date: "01-02-2020"
+            amount: 500,
+            date: "2021-03-18"
         },
         {
             id: "4",
             description: "HouseRent",
             category: "FoodnDining",
-            amount: 430,
-            date: "01-02-2020"
+            amount: 800,
+            date: "2021-03-22"
         },
         {
             id: "5",
             description: "Tuition",
             category: "Education",
-            amount: 430,
-            date: "01-02-2020"
+            amount: 500,
+            date: "2021-03-26"
         }
     ]);
     return (

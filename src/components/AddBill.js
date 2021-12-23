@@ -9,8 +9,10 @@ export const AddBill = () => {
     const [date, setDate] = useState("");
 
     const [bills, setBills] = useContext(BillContext);
+
     const addBill = (e) => {
         e.preventDefault();
+        // return false;
         setBills(prevBills => [...prevBills, {
             id: uuidv4(),
             description: description,
@@ -26,7 +28,6 @@ export const AddBill = () => {
 
     return (
         <form className="form-addbill" onSubmit={addBill}>
-            <input type="text" value={description} onChange={(e) => { setDescription(e.target.value) }} />
             <select value={category} onChange={(e) => { setCategory(e.target.value) }}>
                 <option value="" hidden disabled>Category</option>
                 <option value="FoodnDining">Food and Dining</option>
@@ -34,7 +35,8 @@ export const AddBill = () => {
                 <option value="Shopping">Shopping</option>
                 <option value="Education">Education</option>
             </select>
-            <input type="number" value={amt} onChange={(e) => { setAmt(e.target.value) }} />
+            <input type="text" placeholder="Description" value={description} onChange={(e) => { setDescription(e.target.value) }} />
+            <input type="number" placeholder="Amount" value={amt} onChange={(e) => { setAmt(e.target.value) }} />
             <input type="date" value={date} onChange={(e) => { setDate(e.target.value) }} />
             <button type="submit">Add</button>
         </form>

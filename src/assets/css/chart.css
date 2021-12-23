@@ -1,0 +1,11 @@
+.chart{
+    display: flex;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    background-color: var(--bg);
+}
+.chartContainer{
+    height: 80%;
+    width: 100%;
+}

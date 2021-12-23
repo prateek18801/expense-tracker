@@ -13,20 +13,22 @@ export const Dashboard = () => {
         <div className="dashboard">
             <TotalExpenses bills={bills} />
             <AddBill />
-            {bills.map((bill) => {
-                return (
-                    <Bill
-                        key={bill.id}
-                        bills={bills}
-                        setBills={setBills}
-                        bill={bill}
-                        description={bill.description}
-                        category={bill.category}
-                        amount={bill.amount}
-                        date={bill.date}
-                    />
-                );
-            })}
+            <div className="bills">
+                {bills.map((bill) => {
+                    return (
+                        <Bill
+                            key={bill.id}
+                            bills={bills}
+                            setBills={setBills}
+                            bill={bill}
+                            description={bill.description}
+                            category={bill.category}
+                            amount={bill.amount}
+                            date={bill.date}
+                        />
+                    );
+                })}
+            </div>
         </div>
     );
 }

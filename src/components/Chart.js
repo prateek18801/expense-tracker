@@ -1,14 +1,26 @@
-import React from "react";
-import { Line, Bar } from "react-chartjs-2";
+import React, { useContext } from "react";
+import { Line, LineChart, ResponsiveContainer, XAxis, YAxis, Tooltip, CartesianGrid } from "recharts";
+
+import { BillContext } from "../contexts/BillContext";
+
+import "../assets/css/chart.css";
 
 export const Chart = () => {
+    const [bills, setBills] = useContext(BillContext);
+
     return (
-        <div>
-            <Line
-                data= {{
-                    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-                }}
-            />
+        <div className="chart">
+            <div className="chartContainer">
+                <ResponsiveContainer>
+                    <LineChart data={bills} margin={{right:10, bottom: -15,left: -20}} >
+                        <CartesianGrid stroke="#5c5c5c" />
+                        <XAxis dataKey="date" interval={"preserveStartEnd"} tick={{fontSize: "10px"}} />
+                        <YAxis type="number" domain={[0, 'dataMax']} tick={{fontSize: "12px"}} />
+                        <Tooltip />
+                        <Line dataKey="amount" type="monotone" stroke="green" activeDot={{ r: 5 }} />
+                    </LineChart>
+                </ResponsiveContainer>
+            </div>
         </div>
     );
 }

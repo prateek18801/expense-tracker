@@ -6,8 +6,9 @@ export default function TotalExpenses({ bills }) {
         totalExpenses += bills[i].amount;
     }
     return (
-        <div>
-            ${totalExpenses}
+        <div className="expenses">
+            Total Expenses: ₹{totalExpenses}
+            Monthly Budget: ₹10000
         </div>
     );
 }
