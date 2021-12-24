@@ -36,17 +36,13 @@ export const EditBill = ({ style, setDisplay, bill }) => {
             amount: parseInt(amt),
             date: date
         }]);
-        setDescription("");
-        setCategory("");
-        setAmt("");
-        setDate("");
-        setDisplay("none")
+        setDisplay("none");
     }
 
     return (
         <div className="editbill" style={style}>
             <button className="btn-hideEdit" onClick={() => { setDisplay("none") }}>
-                <span class="material-icons-outlined">close</span>
+                <span className="material-icons-outlined">close</span>
             </button>
             <form className="form-editbill" onSubmit={saveEdits}>
                 <input className="inp-description inp" type="text" placeholder="Description" value={description} onChange={(e) => { setDescription(e.target.value) }} />
