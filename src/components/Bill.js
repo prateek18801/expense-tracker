@@ -15,7 +15,7 @@ export default function Bill({ bills, setBills, bill, description, category, amo
             </div>
             <div className="date">{date}</div>
             <button className="btn-deletebill" onClick={deleteHandler}>
-                <span class="material-icons-outlined">delete</span>
+                <span className="material-icons-outlined">delete</span>
             </button>
         </div>
     );
