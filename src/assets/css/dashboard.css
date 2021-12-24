@@ -1,4 +1,5 @@
 .dashboard{
+    position: relative;
     display: grid;
     grid-template-rows: 2fr 2fr 5fr;
     height: 85vh;

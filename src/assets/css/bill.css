@@ -1,7 +1,7 @@
 .bill{
     display: grid;
     align-items: center;
-    grid-template-columns: 2fr 5fr 3fr 1fr;
+    grid-template-columns: 2fr 4fr 2fr 1fr 1fr;
     border-radius: 3px;
     border: 1px solid grey;
     margin: 5px 0;
@@ -25,14 +25,36 @@
 .description{
     font-size: 12px;
 }
-.btn-deletebill{
+.date{
+    font-size: 12px;
+}
+.btn-bill{
     border: none;
     outline: none;
     color: white;
-    background-color: var(--red);
     height: 2rem;
     width: 2rem;
     display: grid;
     place-items: center;
     border-radius: 50%;
+    transition: all 0.3s ease;
+}
+.btn-editbill{
+    background-color: var(--green);
+    margin: 0 5px;
+}
+.btn-editbill:hover{
+    background-color: rgb(0, 90, 0);
+}
+.btn-editbill:active{
+    transform: scale(90%);
+}
+.btn-deletebill{
+    background-color: var(--red);
+}
+.btn-deletebill:hover{
+    background-color: rgb(185, 0, 0);
+}
+.btn-deletebill:active{
+    transform: scale(90%);
 }
